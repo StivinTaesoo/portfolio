@@ -4,11 +4,11 @@ function showMenu() {
     let exitMenu = document.getElementById("exitIcon");
 
     menuTarget.addEventListener("click", () => {
-        menuContainer.style.right = "0";
+        menuContainer.style.display = "block";
     });
 
     exitMenu.addEventListener("click", () => {
-        menuContainer.style.right = "-300px";
+        menuContainer.style.display = "none";
     });
 }
 showMenu();
