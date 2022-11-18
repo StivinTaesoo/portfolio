@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="resume.css" />
+        <link rel="stylesheet" href="./contact.css" />
+        <link rel="stylesheet" href="./portfolio.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-container">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="Logo" class="logo"
+                /></a>
+                <div>
+                    <div class="menu" id="navMenu">
+                        <ul>
+                            <img
+                                src="./icons/x-square.svg"
+                                alt=""
+                                class="exit-icon"
+                                id="exitIcon"
+                            />
+                            <li><a href="./index.html"> Home</a></li>
+                            <li><a href="./about.html"> About</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <img
+                        src="./icons/menu-up.svg"
+                        alt="Menu Icon"
+                        class="menu-icon"
+                        id="menuIcon"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="main-container">
+            <div class="blur-container">
+                <div class="carousel--container">
+                    <div class="carousel">
+                        <!-- Images -->
+                        <div class="slide-img-container">
+                            <img src="./images/cfm1.PNG" alt="" />
+                        </div>
+                        <div class="slide-img-container">
+                            <img src="./images/cfm2.PNG" alt="" />
+                        </div>
+                        <div class="slide-img-container">
+                            <img src="./images/cfm3.PNG" alt="" />
+                        </div>
+                        <div class="slide-img-container">
+                            <img src="./images/cfm4.PNG" alt="" />
+                        </div>
+                        <div class="slide-img-container">
+                            <img src="./images/cfm5.PNG" alt="" />
+                        </div>
+                        <div class="slide-img-container">
+                            <img src="./images/cfm6.PNG" alt="" />
+                        </div>
+                        <div class="slide-img-container">
+                            <img src="./images/cfm7.PNG" alt="" />
+                        </div>
+                        <div class="slide-img-container">
+                            <img src="./images/cfm8.PNG" alt="" />
+                        </div>
+
+                        <button
+                            class="bttn btn--left back"
+                            onclick="plusSlides(-1)"
+                        >
+                            <img src="./icons/chevron-left.svg" alt="" />
+                        </button>
+                        <button
+                            class="bttn btn--right forward"
+                            onclick="plusSlides(1)"
+                        >
+                            <img src="./icons/chevron-right.svg" alt="" />
+                        </button>
+                    </div>
+
+                    <div class="dots">
+                        <div class="dot" onclick="currentSlide(1)">&nbsp;</div>
+                        <div class="dot" onclick="currentSlide(2)">&nbsp;</div>
+                        <div class="dot" onclick="currentSlide(3)">&nbsp;</div>
+                        <div class="dot" onclick="currentSlide(4)">&nbsp;</div>
+                        <div class="dot" onclick="currentSlide(5)">&nbsp;</div>
+                        <div class="dot" onclick="currentSlide(6)">&nbsp;</div>
+                        <div class="dot" onclick="currentSlide(7)">&nbsp;</div>
+                        <div class="dot" onclick="currentSlide(8)">&nbsp;</div>
+                    </div>
+
+                    <blockquote>
+                        <h3 class="caption">
+                            Christ Family Ministry's Landing Page
+                        </h3>
+                        <p>
+                            It was a seemingly difficult UI to code but I took
+                            the challenge and it really improved my Html, Css
+                            and JavaScript Skills.
+                        </p>
+                        <div class="ctn">
+                            <div class="btn-grey">
+                                <a href="https://stivintaesoo.github.io/cfm/"
+                                    >Visit site</a
+                                >
+                            </div>
+                            <div class="btn">
+                                <a href="./contact.html">Get in touch</a>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+        </section>
+
+        <div class="blur-container">
+            <div class="carousel--container">
+                <div class="carousel">
+                    <!-- Images -->
+                    <div class="slide-img-container2" id="slide-img-container">
+                        <img src="./images/cen1.PNG" alt="" />
+                    </div>
+                    <div class="slide-img-container2" id="slide-img-container">
+                        <img src="./images/cen2.PNG" alt="" />
+                    </div>
+                    <div class="slide-img-container2" id="slide-img-container">
+                        <img src="./images/cen3.PNG" alt="" />
+                    </div>
+                    <div class="slide-img-container2" id="slide-img-container">
+                        <img src="./images/cen4.PNG" alt="" />
+                    </div>
+                    <div class="slide-img-container2" id="slide-img-container">
+                        <img src="./images/cen5.PNG" alt="" />
+                    </div>
+                    <div class="slide-img-container2" id="slide-img-container">
+                        <img src="./images/cen6.PNG" alt="" />
+                    </div>
+                    <div class="slide-img-container2" id="slide-img-container">
+                        <img src="./images/cen7.PNG" alt="" />
+                    </div>
+
+                    <button
+                        class="bttn btn--left back"
+                        onclick="plusSlides2(-1)"
+                    >
+                        <img src="./icons/chevron-left.svg" alt="" />
+                    </button>
+                    <button
+                        class="bttn btn--right forward"
+                        onclick="plusSlides2(1)"
+                    >
+                        <img src="./icons/chevron-right.svg" alt="" />
+                    </button>
+                </div>
+
+                <div class="dots">
+                    <div class="dot-2" id="dot" onclick="currentSlide2(1)">
+                        &nbsp;
+                    </div>
+                    <div class="dot-2" id="dot" onclick="currentSlide2(2)">
+                        &nbsp;
+                    </div>
+                    <div class="dot-2" id="dot" onclick="currentSlide2(3)">
+                        &nbsp;
+                    </div>
+                    <div class="dot-2" id="dot" onclick="currentSlide2(4)">
+                        &nbsp;
+                    </div>
+                    <div class="dot-2" id="dot" onclick="currentSlide2(5)">
+                        &nbsp;
+                    </div>
+                    <div
+                        class="dot-2"
+                        id="dot"
+                        onclick="currentSlide2(6)"
+                    ></div>
+                    <div class="dot-2" id="dot" onclick="currentSlide2(7)">
+                        &nbsp;
+                    </div>
+                </div>
+                <blockquote>
+                    <h3 class="caption">
+                        The Center for Nigerian Leadership Perspective's
+                    </h3>
+                    <p>
+                        The Center for Nigerian Leadership Perspective's website
+                        was my very first project. It's always a joy to come
+                        back to see how it all started and how better I'm daily
+                        becoming at this.
+                    </p>
+                    <div class="ctn">
+                        <div class="btn-grey">
+                            <a href="https://cenlepnass.github.io/cenlep/"
+                                >Visit site</a
+                            >
+                        </div>
+                        <div class="btn">
+                            <a href="./contact.html">Get in touch</a>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://m.facebook.com/tersoo.stephen">
+                    <img src="./icons/facebook.png" alt=""
+                /></a>
+
+                <a href="https://mobile.twitter.com/StivinTaesoo ">
+                    <img src="./icons/twitter.png" alt=""
+                /></a>
+
+                <a href="https://www.instagram.com/stivintaesoo/">
+                    <img src="./icons/instagram.png" alt="" />
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/mwlite/in/tersoo-stephen-66a70a93"
+                >
+                    <img src="./icons/linkedin.png" alt=""
+                /></a>
+            </div>
+
+            <p>copyright &copy; 2022 -- Stephen Tersoo</p>
+        </footer>
+
+        <script>
+            function showMenu() {
+                let menuTarget = document.getElementById("menuIcon");
+                let menuContainer = document.getElementById("navMenu");
+                let exitMenu = document.getElementById("exitIcon");
+
+                menuTarget.addEventListener("click", () => {
+                    menuContainer.style.right = "0";
+                });
+
+                exitMenu.addEventListener("click", () => {
+                    menuContainer.style.right = "-300px";
+                });
+            }
+            showMenu();
+
+            var slidePosition = 1;
+            SlideShow(slidePosition);
+
+            // forward/Back controls
+            function plusSlides(n) {
+                SlideShow((slidePosition += n));
+            }
+
+            //  images controls
+            function currentSlide(n) {
+                SlideShow((slidePosition = n));
+            }
+
+            function SlideShow(n) {
+                let i;
+                let slides = document.getElementsByClassName(
+                    "slide-img-container"
+                );
+                let circles = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slidePosition = 1;
+                }
+                if (n < 1) {
+                    slidePosition = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < circles.length; i++) {
+                    circles[i].className = circles[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                slides[slidePosition - 1].style.display = "block";
+                circles[slidePosition - 1].className += " active";
+            }
+
+            ///////////////// Second Slide ////////////////////////
+
+            var slidePosition2 = 0;
+            SlideShow2(slidePosition2);
+
+            // forward/Back controls
+            function plusSlides2(m) {
+                SlideShow2((slidePosition2 += m));
+            }
+
+            //  images controls
+            function currentSlide2(m) {
+                SlideShow2((slidePosition2 = m));
+            }
+
+            function SlideShow2(m) {
+                let i;
+                let slides2 = document.getElementsByClassName(
+                    "slide-img-container2"
+                );
+                let circles2 = document.getElementsByClassName("dot-2");
+                if (m > slides2.length) {
+                    slidePosition2 = 1;
+                }
+                if (m < 1) {
+                    slidePosition2 = slides2.length;
+                }
+                for (i = 0; i < slides2.length; i++) {
+                    slides2[i].style.display = "none";
+                }
+                for (i = 0; i < circles2.length; i++) {
+                    circles2[i].className = circles2[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                slides2[slidePosition2 - 1].style.display = "block";
+                circles2[slidePosition2 - 1].className += " active";
+            }
+        </script>
+    </body>
+</html>

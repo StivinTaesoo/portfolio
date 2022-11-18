@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="resume.css" />
+        <link rel="stylesheet" href="./contact.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>About</title>
+        <style>
+            main {
+                position: relative;
+                height: inherit;
+            }
+            .height {
+                height: 40vh;
+            }
+            .light-bg {
+                background: #cac9c9;
+            }
+
+            .float-container {
+                width: 70%;
+                min-width: 250px;
+                background: whitesmoke;
+                position: absolute;
+                padding: 2rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 1rem;
+                box-shadow: 0 0 10px black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* gap: 1rem; */
+            }
+
+            .component--1,
+            .component--2 {
+                width: 100%;
+                position: relative;
+                display: flex;
+                /* align-items: center; */
+            }
+            .component--1 {
+                justify-content: center;
+                width: 80%;
+                padding: 0 0 24px 24px;
+            }
+            .component--2 {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .img-container {
+                width: 90%;
+                height: 300px;
+                background: #888a9c05;
+                border-radius: 6px;
+                position: relative;
+            }
+
+            .image-cont img {
+                width: 100%;
+                border-radius: 8px;
+                opacity: 1;
+                transition: 0.3s ease;
+            }
+            .image-cont img:hover {
+                transform: scale(1.2);
+            }
+
+            .text-cont {
+                text-align: left;
+                line-height: 1.5;
+                padding-right: 3rem;
+            }
+
+            .colorbox {
+                width: 40%;
+                background: #777fff;
+                position: absolute;
+                top: 50%;
+                left: -5%;
+                transform: translate(0, -50%);
+                z-index: 2;
+            }
+
+            .colorbox::after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+            }
+
+            .image-border {
+                width: 80%;
+                border: 8px solid #1fcdf850;
+                position: absolute;
+                top: 0;
+                left: 11%;
+                animation: animate3 5s linear infinite;
+            }
+
+            .image-border::after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+            }
+            @keyframes animate3 {
+                0% {
+                    border: 8px solid transparent;
+                    border-top: 8px solid #1fcdf850;
+                }
+                30% {
+                    border: 8px solid transparent;
+                    border-right: 8px solid #1fcdf850;
+                }
+                60% {
+                    border: 8px solid transparent;
+                    border-bottom: 8px solid #1fcdf850;
+                }
+                100% {
+                    border: 8px solid transparent;
+                    border-left: 8px solid #1fcdf850;
+                }
+            }
+
+            .image-cont {
+                width: 50%;
+                /* background: turquoise; */
+                position: absolute;
+                left: 25%;
+                top: 9%;
+                z-index: 2;
+            }
+            .image-cont::after {
+                content: "";
+                display: block;
+                padding-bottom: 30%;
+            }
+
+            .image-cont img {
+                width: 100%;
+                box-shadow: 0 0 8px 0 #5a5959;
+                border-radius: 1rem;
+            }
+
+            /* *********** Media Query ***************/
+            @media (max-width: 700px) {
+                .float-container {
+                    flex-direction: column;
+                    width: 90%;
+                    padding: 5px;
+                    gap: 0;
+                }
+                .height {
+                    height: 90vh;
+                }
+
+                .component--1,
+                .component--2 {
+                    width: 100%;
+                    padding: 24px;
+                    /* background: #e2ff77; */
+                }
+                .component--1 {
+                    height: 250px;
+                    padding-left: 10px;
+                }
+
+                .img-container {
+                    width: 85%;
+                    height: 200px;
+                }
+                .image-cont {
+                    width: 70%;
+                }
+
+                .colorbox {
+                    width: 50%;
+                }
+
+                .colorbox::after {
+                    padding-bottom: 100%;
+                }
+
+                .image-border {
+                    width: 100%;
+                    height: 210px;
+                    top: 0%;
+                    left: 11%;
+                }
+
+                .image-border::after {
+                    padding-bottom: 100%;
+                }
+
+                .text-cont {
+                    text-align: left;
+                    line-height: 1.5;
+                    padding-right: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-container">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="Logo" class="logo"
+                /></a>
+                <div>
+                    <div class="menu" id="navMenu">
+                        <ul>
+                            <img
+                                src="./icons/x-square.svg"
+                                alt=""
+                                class="exit-icon"
+                                id="exitIcon"
+                            />
+                            <li><a href="./index.html"> Home</a></li>
+                            <li><a href="./about.html"> About</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <img
+                        src="./icons/menu-up.svg"
+                        alt="Menu Icon"
+                        class="menu-icon"
+                        id="menuIcon"
+                    />
+                </div>
+            </div>
+        </section>
+        <main>
+            <section class="main-container height">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+                <div class="circle-4"></div>
+            </section>
+            <section class="light-bg height"></section>
+            <div class="float-container">
+                <div class="component--1">
+                    <div class="img-container">
+                        <div class="colorbox"></div>
+                        <div class="image-border"></div>
+                        <div class="image-cont">
+                            <img src="./images/Tersoo.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="component--2">
+                    <div class="text-cont">
+                        <h2>Stephen Tersoo</h2>
+                        <h4>Web Developer</h4>
+                        <p>JavaScript | Html | Css</p>
+                    </div>
+                    <div class="text-cont">
+                        <h4>About Me</h4>
+                        <p>
+                            My desire to become a software developer led me to
+                            committing over six months to a learning streak with
+                            the goal of establishing myself first as a frontend
+                            developer. The learning journey has thus far
+                            equipped me with an advanced knowledge of Html and
+                            Css and intermediary knowledge of Python and
+                            JavaScript. <br /><br />
+                            I'm currently learning JavaScript Framework - React
+                            with Python - Django next in line as part of the
+                            learning plan.
+                        </p>
+                        <p>
+                            Credit to courses by Jonas Schmedmann, Angela Yu and
+                            others. <br /><br />
+                            My profound gratitude goes to my brother and friend
+                            Chris Imoni and the entire Developers of Value
+                            community for their unwavering support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://m.facebook.com/tersoo.stephen">
+                    <img src="./icons/facebook.png" alt=""
+                /></a>
+
+                <a href="https://mobile.twitter.com/StivinTaesoo ">
+                    <img src="./icons/twitter.png" alt=""
+                /></a>
+
+                <a href="https://www.instagram.com/stivintaesoo/">
+                    <img src="./icons/instagram.png" alt="" />
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/mwlite/in/tersoo-stephen-66a70a93"
+                >
+                    <img src="./icons/linkedin.png" alt=""
+                /></a>
+            </div>
+
+            <p>copyright &copy; 2022 -- Stephen Tersoo</p>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./resume.css" />
+        <link rel="stylesheet" href="./contact.css" />
+        <title>Contact</title>
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-container">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="Logo" class="logo"
+                /></a>
+                <div>
+                    <div class="menu" id="navMenu">
+                        <ul>
+                            <img
+                                src="./icons/x-square.svg"
+                                alt=""
+                                class="exit-icon"
+                                id="exitIcon"
+                            />
+                            <li><a href="./index.html"> Home</a></li>
+                            <li><a href="./about.html"> About</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <img
+                        src="./icons/menu-up.svg"
+                        alt="Menu Icon"
+                        class="menu-icon"
+                        id="menuIcon"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="main-container">
+            <div class="media-icons">
+                <div class="social-icons flex-d">
+                    <div class="icons-circles">
+                        <a href="https://m.facebook.com/tersoo.stephen">
+                            <img src="./icons/facebook.png" alt=""
+                        /></a>
+                    </div>
+                    <div class="icons-circles">
+                        <a href="https://mobile.twitter.com/StivinTaesoo ">
+                            <img src="./icons/twitter.png" alt=""
+                        /></a>
+                    </div>
+                    <div class="icons-circles">
+                        <a href="https://www.instagram.com/stivintaesoo/">
+                            <img src="./icons/instagram.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="icons-circles">
+                        <a
+                            href="https://www.linkedin.com/mwlite/in/tersoo-stephen-66a70a93"
+                        >
+                            <img src="./icons/linkedin.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blur-container">
+                <!-- ----------------------- EMAIL SECTION ----------------- -->
+
+                <div class="mail__container">
+                    <form
+                        action="https://formsubmit.co/stephentersoo17@gmail.com"
+                        method="POST"
+                        id="form__group"
+                    >
+                        <div class="form__group">
+                            <label for="firstName"> First Name</label>
+                            <input
+                                type="text"
+                                name="firstName"
+                                id="firstName"
+                            />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="lasName"> Last Name</label>
+                            <input type="text" name="lastName" id="lastName" />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email"> Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message"> Message</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <!-- <div id="status" class="error">Success</div> -->
+            </div>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+        </section>
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://m.facebook.com/tersoo.stephen">
+                    <img src="./icons/facebook.png" alt=""
+                /></a>
+
+                <a href="https://mobile.twitter.com/StivinTaesoo ">
+                    <img src="./icons/twitter.png" alt=""
+                /></a>
+
+                <a href="https://www.instagram.com/stivintaesoo/">
+                    <img src="./icons/instagram.png" alt="" />
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/mwlite/in/tersoo-stephen-66a70a93"
+                >
+                    <img src="./icons/linkedin.png" alt=""
+                /></a>
+            </div>
+
+            <p>copyright &copy; 2022 -- Stephen Tersoo</p>
+        </footer>
+
+        <script>
+            function showMenu() {
+                let menuTarget = document.getElementById("menuIcon");
+                let menuContainer = document.getElementById("navMenu");
+                let exitMenu = document.getElementById("exitIcon");
+
+                menuTarget.addEventListener("click", () => {
+                    menuContainer.style.right = "0";
+                });
+
+                exitMenu.addEventListener("click", () => {
+                    menuContainer.style.right = "-300px";
+                });
+            }
+            showMenu();
+        </script>
+    </body>
+</html>
