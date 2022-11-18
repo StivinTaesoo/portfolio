@@ -245,18 +245,20 @@
 
         <script>
             function showMenu() {
-                let menuTarget = document.getElementById("menuIcon");
-                let menuContainer = document.getElementById("navMenu");
-                let exitMenu = document.getElementById("exitIcon");
+    let menuTarget = document.getElementById("menuIcon");
+    let menuContainer = document.getElementById("navMenu");
+    let exitMenu = document.getElementById("exitIcon");
 
-                menuTarget.addEventListener("click", () => {
-                    menuContainer.style.right = "0";
-                });
+    menuTarget.addEventListener("click", () => {
+        menuContainer.style.display = "block";
+    });
 
-                exitMenu.addEventListener("click", () => {
-                    menuContainer.style.right = "-300px";
-                });
-            }
+    exitMenu.addEventListener("click", () => {
+        menuContainer.style.display = "none";
+    });
+}
+showMenu();
+
             showMenu();
 
             var slidePosition = 1;
