@@ -42,6 +42,7 @@ section {
 .menu ul li {
     list-style: none;
     transition: 0.3s ease;
+    padding: 10px;
 }
 .menu ul li a {
     color: #fff;
@@ -77,10 +78,10 @@ section {
         padding: 20px;
     }
     .menu {
-        /* display: none; */
+        display: none;
         position: absolute;
         top: 4.2rem;
-        right: -300px;
+        right: 0;
         flex-direction: column;
         width: 250px;
         background: #252525;
@@ -108,7 +109,7 @@ section {
         display: block;
         position: absolute;
         top: 20px;
-        left: -8%;
+        left: 12%;
     }
 }
 
